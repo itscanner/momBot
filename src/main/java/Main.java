@@ -1,3 +1,4 @@
+import events.FoodEvent;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 
@@ -10,6 +11,7 @@ public class Main {
         JDA jda;
         try {
             jda = jdaBuilder.build();
+            jda.addEventListener(new FoodEvent());
         } catch (LoginException e) {
             e.printStackTrace();
         }
