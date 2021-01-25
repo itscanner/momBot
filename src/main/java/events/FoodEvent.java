@@ -59,6 +59,11 @@ public class FoodEvent extends ListenerAdapter {
                             .queue();
                     break;
 
+                case "thanks":
+                    stop = true;
+                    event.getChannel().sendMessage("I wish you were that grateful when you came out the womb" +
+                            "and pissed on me");
+
                 default:
                     break;
             }
